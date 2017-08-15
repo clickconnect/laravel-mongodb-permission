@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "spatie/laravel-permission": "~1.9.*",
+        "spatie/laravel-permission": "1.9.*",
         "moloquent/moloquent": "^0.4.0"
     },
     "autoload": {
