@@ -23,7 +23,7 @@
     ],
     "require": {
         "spatie/laravel-permission": "1.9.*",
-        "moloquent/moloquent": "dev-master"
+        "moloquent/moloquent": "^0.4.0"
     },
     "autoload": {
         "psr-4": {
