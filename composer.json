@@ -21,11 +21,17 @@
             "role": "Developer"
         }
     ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/johnrazmus/moloquent.git"
+    }
+  ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "spatie/laravel-permission": "2.7.*",
-        "moloquent/moloquent": "^0.4.0"
+    "johnrazmus/moloquent": "dev-master",
     },
     "autoload": {
         "psr-4": {
