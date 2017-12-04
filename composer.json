@@ -22,6 +22,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "spatie/laravel-permission": "1.9.*",
         "moloquent/moloquent": "^0.4.0"
