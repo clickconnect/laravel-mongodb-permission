@@ -31,7 +31,7 @@
     "prefer-stable": true,
     "require": {
         "spatie/laravel-permission": "2.7.*",
-    "johnrazmus/moloquent": "dev-master",
+    "johnrazmus/moloquent": "dev-master"
     },
     "autoload": {
         "psr-4": {
