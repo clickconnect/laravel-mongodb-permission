@@ -1,5 +1,5 @@
 {
-    "name": "fahmiardi/laravel-mongodb-permission",
+    "name": "johnrazmus/laravel-mongodb-permission",
     "description": "Permission handling for Laravel 5.3 using Mongodb (Moloquent) based on Spatie package",
     "keywords": [
         "spatie",
