@@ -5,6 +5,7 @@ namespace Fahmiardi\Mongodb\Permissions\Models;
 use Moloquent\Eloquent\Model;
 use Spatie\Permission\Contracts\Permission as PermissionContract;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Permission extends Model implements PermissionContract
 {
@@ -13,7 +14,7 @@ class Permission extends Model implements PermissionContract
      *
      * @return \Illuminate\Support\Collection $roles
      */
-    public function roles()
+    public function roles(): BelongsToMany
     {
         return $this->getPermissions(
             config('laravel-permission.models.role')
