@@ -2,6 +2,7 @@
 
 namespace Fahmiardi\Mongodb\Permissions;
 
+use Illuminate\Support\Collection;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Contracts\Auth\Access\Gate;
 use Spatie\Permission\Contracts\Permission;
@@ -22,7 +23,7 @@ class PermissionRegistrar extends BasePermissionRegistrar
      *
      * @return \Moloquent\Eloquent\Collection
      */
-    public function getPermissions()
+    public function getPermissions(): Collection
     {
         return app(Permission::class)->get();
     }
