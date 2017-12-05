@@ -45,7 +45,7 @@ class Role extends Model implements RoleContract
      *
      * @return Role
      */
-    public static function findByName($name, $guardName): RoleContract
+    public static function findByName(string $name, $guardName): RoleContract
     {
         $role = static::where('name', $name)->first();
 
