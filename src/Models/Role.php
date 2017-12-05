@@ -6,6 +6,7 @@ use Moloquent\Eloquent\Model;
 use Spatie\Permission\Contracts\Role as RoleContract;
 use Spatie\Permission\Traits\HasPermissions;
 use Spatie\Permission\Exceptions\RoleDoesNotExist;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Role extends Model implements RoleContract
 {
@@ -16,7 +17,7 @@ class Role extends Model implements RoleContract
      *
      * @return \Moloquent\Eloquent\Relations\EmbedsMany
      */
-    public function permissions()
+    public function permissions(): BelongsToMany
     {
         return $this->embedsMany(
             config('laravel-permission.table_names.role_has_permissions')
@@ -44,7 +45,7 @@ class Role extends Model implements RoleContract
      *
      * @return Role
      */
-    public static function findByName($name)
+    public static function findByName($name): RoleContract
     {
         $role = static::where('name', $name)->first();
 
