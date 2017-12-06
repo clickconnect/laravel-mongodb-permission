@@ -228,7 +228,7 @@ trait HasRoles
     protected function getStoredRole($role)
     {
         if (is_string($role)) {
-            return app(Role::class)->findByName($role);
+            return app(Role::class)->findByName($role, '');
         }
 
         return $role;
